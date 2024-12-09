@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Aarya Karmakar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('fishwallpaper2-01.jpg'); 
+            background-position: center;
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(255, 255, 255);
+            padding-top: 50px;
+        }
+
+        .arrow-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(45, 45, 45, 0.9); 
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .arrow-button:hover {
+            transform: scale(1.1);
+            background-color: #d7cbbe;
+            color: rgb(45, 45, 45);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: rgba(45, 45, 45, 0.9); 
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: rgb(255, 255, 255);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            border-bottom: 2px solid #d7cbbe;
+            padding: 10px;
+            background-color: #7d7d7d; 
+            color: #fff; 
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            display: inline-block;
+            background-color: #817464;
+            padding: 8px 20px;
+            margin: 5px 10px 5px 0;
+            border-radius: 25px;
+            font-size: 1rem;
+        }
+
+        .experience-item,
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h5,
+        .education-item h5 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .experience-item p,
+        .education-item p {
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #d7cbbe;
+            color: rgb(82, 82, 82);
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            background-color: #ff6a00;
+        }
+    </style>
+</head>
+<body>
+   
+    <button class="arrow-button" onclick="goToLandingPage()">←</button>
+
+    <div class="container">
+        <div class="header">
+            <h1>Aarya Karmakar</h1>
+            <p>Communication Design Student | Aspiring Filmmaker | Creative Storyteller</p>
+        </div>
+
+        <div class="text-center">
+            <a href="path/to/your-cv.pdf" class="download-btn" download="Aarya_Karmakar_Resume.pdf">Download CV</a>
+        </div>
+
+        <div class="section-title">About me</div>
+        <div class="section-content">
+            <p>A passionate Communication Design student with a strong focus on visual storytelling, media, and interactive design. My goal is to create films and designs that inspire people to live, learn, and grow. I have a keen eye for detail and believe in pushing creative boundaries to deliver impactful results.</p>
+        </div>
+
+        <div class="section-title">Skills</div>
+        <div class="section-content skills">
+            <ul>
+                <li>Filmmaking</li>
+                <li>Video Editing</li>
+                <li>Web Design</li>
+                <li>Graphic Design</li>
+                <li>Typography</li>
+                <li>Research & Analysis</li>
+                <li>Adobe Creative Suite</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>UI/UX Design</li>
+                <li>Communication</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Work Experience</div>
+        <div class="section-content">
+            <div class="experience-item">
+                <h5>YOUTUBE (media)</h5>
+                <p><strong>2022-2024</strong></p>
+                <p>I worked as a social media manager/ graphic designer for a travel youtube page.</p>
+            </div>
+
+            <div class="experience-item">
+                <h5>TDG (company)</h5>
+                <p><strong>2020-2024</strong></p>
+                <p>I work as a tattoo designer/ artist for this company and went to manage in several events like Lolapalooza, Spotify, Irus Eyewear, Nykaaland, Myntra etc .</p>
+            </div>
+        </div>
+
+        <div class="section-title">Education</div>
+        <div class="section-content">
+            <div class="education-item">
+                <h5>Bachelor of Communication Design</h5>
+                <p><strong>Atlas SkillTech University</strong> – 2021 - Present</p>
+                <p>Currently pursuing a degree in Communication Design with a minor in Media Studies. Focus on design theory, visual communication, and film production.</p>
+            </div>
+
+            <div class="education-item">
+                <h5>High School Diploma</h5>
+                <p><strong>Lilavatibai Popdar High School</strong> – Graduated: 2020</p>
+                <p>Completed high school with focus on Humanities and Art.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Contact: aarya.karmakar@gmail.com | LinkedIn: linkedin.com/in/aarya-karmakar</p>
+        </footer>
+    </div>
+
+    <script>
+        function goToLandingPage() {
+            window.location.href = 'portfolio final sem.html'; 
+        }
+    </script>
+</body>
+</html>
