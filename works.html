@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('fishwallpaper2-01.jpg'); 
+            background-size: cover;
+            background-position: center;
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(255, 255, 255);
+            padding-top: 50px;
+        }
+        .arrow-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(45, 45, 45, 0.9); 
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .arrow-button:hover {
+            transform: scale(1.1);
+            background-color: #d7cbbe;
+            color: rgb(45, 45, 45);
+        }
+
+        
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            justify-items: center;
+        }
+
+        .project-box {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+
+        .flip-card-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .flip-card-back {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            transform: rotateY(180deg);
+            font-size: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+       
+        .modal-header {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .modal-body {
+            background-color: #f8f9fa;
+            font-size: 1rem;
+        }
+
+        .modal-footer {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <button class="arrow-button" onclick="goToLandingPage()">←</button>
+    <div class="container">
+        <h1 class="text-center mb-4">Works</h1>
+        <div class="project-container">
+            
+            <div class="project-box" onclick="toggleFlip(this)">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="vinyl cover FINAL.jpg" alt="Project 1">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>A vintage-inspired vinyl cover capturing the timeless essence of retro music with bold typography and intricate textures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="project-box" onclick="toggleFlip(this)">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="dragon.jpg" alt="Project 2">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>An enigmatic digital illustration of a dragon symbolizing strength and mystery, blending vibrant hues with delicate scales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="project-box" onclick="toggleFlip(this)">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="INFOGRAPHICS.jpg" alt="Project 3">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>A dynamic infographic weaving data into art, presenting complex information through clean design and vibrant visuals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="project-box" onclick="toggleFlip(this)">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Final Still Life.jpg" alt="Project 4">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>A meticulously detailed still-life painting that celebrates the interplay of light, texture, and form in everyday objects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="project-box" onclick="toggleFlip(this)">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="drop letter print.jpg" alt="Project 5">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>An experimental typography project exploring letterforms through bold contrasts, fluid lines, and innovative layouts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="project-box" onclick="toggleFlip(this)">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="music festival poster final.jpg" alt="Project 6">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>A vibrant music festival poster bursting with energy, blending bold colors and rhythmic patterns to evoke celebration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="project-box" onclick="toggleFlip(this)">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="POSTER WINNNNE.jpg" alt="Project 7">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>A powerful campaign poster combining impactful messaging with minimalist design for maximum visual appeal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="project-box" onclick="toggleFlip(this)">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="front and back card mock up.jpg" alt="Project 8">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>A sleek business card design showcasing modern aesthetics with clean lines, subtle gradients, and tactile finishes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function toggleFlip(element) {
+            const flipCard = element.querySelector('.flip-card');
+            flipCard.classList.toggle('flipped');
+        }
+
+    
+    </script>
+     <script>
+        function goToLandingPage() {
+            window.location.href = 'portfolio final sem.html'; 
+        }
+    </script>
+</body>
+</html>
